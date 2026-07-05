@@ -82,7 +82,6 @@ st.markdown("""
 # ---------------------------------------------------------
 # Keys & Init
 # ---------------------------------------------------------
-@st.cache_resource
 def init_api_keys():
     try:
         dart_key = st.secrets["DART_API_KEY"]
