@@ -24,7 +24,7 @@ st.markdown("""
     
     html, body, .stApp {
         font-family: 'Pretendard', sans-serif;
-        background-color: #FDF2F8; /* 아주 연한 핑크 배경 (로맨틱 톤) */
+        background-color: #F8FAFC;
         color: #334155;
     }
     h1, h2, h3 {
@@ -34,7 +34,7 @@ st.markdown("""
     }
     
     .stButton>button {
-        background: #F43F5E; /* 부드러운 로즈레드 색상 */
+        background: #005EB8;
         color: white !important;
         border: none;
         border-radius: 8px;
@@ -43,25 +43,25 @@ st.markdown("""
         font-size: 1.1rem;
         transition: all 0.3s ease;
         width: 100%;
-        box-shadow: 0 4px 6px -1px rgba(244, 63, 94, 0.3);
+        box-shadow: 0 4px 6px -1px rgba(0, 94, 184, 0.3);
     }
     
     .stButton>button:hover {
         transform: translateY(-2px);
-        background: #E11D48;
-        box-shadow: 0 10px 15px -3px rgba(244, 63, 94, 0.4), 0 4px 6px -2px rgba(244, 63, 94, 0.2);
+        background: #004a94;
+        box-shadow: 0 10px 15px -3px rgba(0, 94, 184, 0.4), 0 4px 6px -2px rgba(0, 94, 184, 0.2);
     }
 
     [data-testid="metric-container"] {
         background-color: #ffffff;
-        border: 1px solid #FCE7F3;
+        border: 1px solid #F1F5F9;
         border-radius: 12px;
-        border-top: 4px solid #F43F5E;
+        border-top: 4px solid #005EB8;
         padding: 1.2rem;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
     }
     [data-testid="stMetricValue"] > div {
-        color: #F43F5E !important;
+        color: #005EB8 !important;
         font-weight: 800 !important;
     }
     [data-testid="stMetricLabel"] > div {
@@ -74,7 +74,7 @@ st.markdown("""
         border-radius: 12px;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         margin-bottom: 1rem;
-        border: 1px solid #FCE7F3;
+        border: 1px solid #F1F5F9;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -84,9 +84,9 @@ st.markdown("""
 # ---------------------------------------------------------
 def init_api_keys():
     try:
-        dart_key = st.secrets["DART_API_KEY"]
-        gemini_key = st.secrets["GEMINI_API_KEY"]
-        dart_reader = OpenDartReader(dart_key) if OpenDartReader else None
+        dart_key = st.secrets.get("DART_API_KEY", "")
+        gemini_key = st.secrets.get("GEMINI_API_KEY", "")
+        dart_reader = OpenDartReader(dart_key) if OpenDartReader and dart_key else None
         return dart_reader, gemini_key
     except Exception as e:
         return None, None
@@ -309,11 +309,11 @@ def get_dca_strategy(ticker):
 # ---------------------------------------------------------
 # Main UI
 # ---------------------------------------------------------
-st.title("💝 나만의 똑똑한 주식 비서")
-st.write("궁금한 주식 종목명이나 코드를 입력하면 AI 비서가 즉시 매력도를 분석해드릴게요! 🥰")
+st.title("📈 인텔리전트 주식 분석 리포트")
+st.write("원하시는 주식 종목명이나 코드를 입력하시면, 펀더멘털 및 AI 기반 심층 분석 리포트를 제공합니다.")
 
-if not GEMINI_API_KEY or not dart:
-    st.warning("⚠️ API Key가 설정되지 않았어요. Streamlit Settings > Secrets에 `DART_API_KEY`와 `GEMINI_API_KEY`를 등록해주세요.")
+if not GEMINI_API_KEY or dart is None:
+    st.warning("⚠️ API Key가 일부 누락되었습니다. (로컬 환경의 경우 .streamlit/secrets.toml, 웹 배포의 경우 앱 설정의 Secrets를 확인해 주세요.)")
 
 df_stock = get_stock_list()
 
@@ -322,11 +322,11 @@ with st.form("search_form"):
     submitted = st.form_submit_button("분석 시작!")
 
 if submitted and user_input:
-    with st.spinner("자기야, 비서가 열심히 분석하고 있어... 🚀"):
+    with st.spinner("해당 종목 데이터를 수집하고 AI 분석을 진행 중입니다. 잠시만 기다려주세요..."):
         ticker, name = find_ticker(user_input, df_stock)
         
         if not ticker:
-            st.error("앗! 해당 종목을 찾을 수 없어요. 정확한 이름을 입력해 주세요 🥲")
+            st.error("해당 종목을 찾을 수 없습니다. 올바른 종목명이나 코드를 입력해 주세요.")
         else:
             per, pbr, roe = get_naver_fundamental(ticker)
             trend = get_investor_trend(ticker)
@@ -358,8 +358,8 @@ if submitted and user_input:
             st.markdown("</div>", unsafe_allow_html=True)
             
             if score >= 80:
-                st.info("💡 **비서의 코멘트:** 당장 사도 좋은 엄청난 종목이에요! 당장 담아보아요 ❤️")
+                st.info("💡 **AI 종합 코멘트:** 현재 펀더멘털 및 모멘텀이 매우 우수한 종목으로 평가됩니다. 긍정적인 매수 검토가 가능합니다.")
             elif score >= 60:
-                st.info("💡 **비서의 코멘트:** 나쁘지 않네요! 분할 매수로 조심스럽게 접근해볼까요? 😊")
+                st.info("💡 **AI 종합 코멘트:** 전반적으로 양호한 지표를 보이고 있습니다. 분할 매수를 통한 보수적 접근을 권장합니다.")
             else:
-                st.warning("💡 **비서의 코멘트:** 지금은 조금 위험해 보여요. 관망하는 게 좋겠어요! 🥺")
+                st.warning("💡 **AI 종합 코멘트:** 현재 여러 지표에서 리스크가 감지됩니다. 신규 진입보다는 관망하는 것을 권장합니다.")
