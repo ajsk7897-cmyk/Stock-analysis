@@ -10,8 +10,11 @@ import json
 
 try:
     import OpenDartReader
-except ImportError:
+    import_error_msg = ""
+except Exception as e:
+    import traceback
     OpenDartReader = None
+    import_error_msg = traceback.format_exc()
 
 # ---------------------------------------------------------
 # Page Configuration & UI/UX CSS
@@ -110,7 +113,7 @@ def init_api_keys():
                         gemini_key = gemini_match.group(1)
 
         if OpenDartReader is None:
-            st.error("⚠️ 서버 문제: OpenDartReader 모듈을 불러오지 못했습니다. requirements.txt를 확인하세요.")
+            st.error(f"⚠️ 서버 문제: OpenDartReader 모듈을 불러오지 못했습니다.\n\n에러 상세 내용:\n```\n{import_error_msg}\n```\nrequirements.txt를 확인하세요.")
         elif not dart_key:
             st.error("⚠️ 설정 문제: DART_API_KEY 값을 찾을 수 없습니다. (Secrets 오타 확인)")
 
