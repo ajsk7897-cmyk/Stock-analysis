@@ -29,13 +29,14 @@ st.markdown("""
         font-family: 'Pretendard', sans-serif;
         background-color: #F8FAFC;
         color: #334155;
-        word-break: keep-all; /* 자연스러운 한글 줄바꿈 */
+        word-break: break-word; /* 모바일에서 텍스트 잘림 방지 */
         overflow-wrap: break-word;
     }
     h1, h2, h3 {
         color: #1e293b;
         font-weight: 800 !important;
         letter-spacing: -0.5px;
+        font-size: clamp(1.3rem, 5vw, 2.2rem) !important; /* 화면 크기에 맞게 자동 조절 */
     }
     
     .stButton>button {
@@ -394,7 +395,7 @@ if submitted and user_input:
             
             st.success(f"**{name} ({ticker})** 분석 완료! 🎉")
             
-            st.markdown(f"<div class='card'><h2 style='text-align:center;'>✨ AI 종합 매력도: {score}점 / 100점 ✨</h2></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='card'><h3 style='text-align:center; word-break: keep-all;'>✨ AI 종합 매력도: {score}점 / 100점 ✨</h3></div>", unsafe_allow_html=True)
             
             col1, col2, col3 = st.columns(3)
             col1.metric("📊 PER (주가수익비율)", f"{per:.1f}배" if per > 0 else "N/A")
