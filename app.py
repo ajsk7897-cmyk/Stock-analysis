@@ -356,8 +356,12 @@ def get_dca_strategy(ticker):
 st.title("📈 인텔리전트 주식 분석 리포트")
 st.write("원하시는 주식 종목명이나 코드를 입력하시면, 펀더멘털 및 AI 기반 심층 분석 리포트를 제공합니다.")
 
-if not GEMINI_API_KEY or dart is None:
+if not GEMINI_API_KEY and dart is None:
     st.info("💡 일부 기능(뉴스 AI 요약, DART 공시 확인)은 API Key를 설정하면 활성화됩니다.")
+elif not GEMINI_API_KEY:
+    st.info("💡 구글 Gemini API Key를 설정하면 뉴스 AI 요약 기능이 활성화됩니다.")
+elif dart is None:
+    st.info("💡 DART API Key를 설정하면 공시 모멘텀 확인 기능이 활성화됩니다.")
 
 df_stock = get_stock_list()
 
