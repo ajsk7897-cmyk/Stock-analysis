@@ -69,9 +69,12 @@ st.markdown("""
     [data-testid="stMetricValue"] > div {
         color: #005EB8 !important;
         font-weight: 800 !important;
+        font-size: clamp(1rem, 3.5vw, 1.6rem) !important; /* 수급동향 등 긴 텍스트 잘림 방지 */
+        word-break: keep-all;
     }
     [data-testid="stMetricLabel"] > div {
         color: #64748b !important;
+        font-size: clamp(0.8rem, 2.5vw, 1rem) !important;
     }
     
     .card {
