@@ -135,7 +135,16 @@ def get_stock_list():
             df_kosdaq = fdr.StockListing('KOSDAQ')
             return pd.concat([df_kospi, df_kosdaq])
         except Exception as e2:
-            st.error("⚠️ 거래소 서버에서 종목 데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.")
+            # 3순위: DART API를 활용하여 종목 목록 가져오기 (KRX 서버 전체 차단 시)
+            if dart is not None:
+                try:
+                    corp_codes = dart.corp_codes
+                    df_dart = corp_codes[corp_codes['stock_code'].notna() & (corp_codes['stock_code'] != '')].copy()
+                    df_dart.rename(columns={'stock_code': 'Code', 'corp_name': 'Name'}, inplace=True)
+                    return df_dart
+                except Exception:
+                    pass
+            st.error(f"⚠️ 종목 데이터를 불러올 수 없습니다. (KRX 에러: {str(e2)}) 잠시 후 다시 시도해주세요.")
             return pd.DataFrame(columns=['Code', 'Name'])
 
 def find_ticker(name_or_ticker, df):
