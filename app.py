@@ -26,6 +26,8 @@ st.markdown("""
         font-family: 'Pretendard', sans-serif;
         background-color: #F8FAFC;
         color: #334155;
+        word-break: keep-all; /* 자연스러운 한글 줄바꿈 */
+        overflow-wrap: break-word;
     }
     h1, h2, h3 {
         color: #1e293b;
@@ -83,9 +85,30 @@ st.markdown("""
 # Keys & Init
 # ---------------------------------------------------------
 def init_api_keys():
+    dart_key = ""
+    gemini_key = ""
     try:
         dart_key = st.secrets.get("DART_API_KEY", "")
         gemini_key = st.secrets.get("GEMINI_API_KEY", "")
+    except Exception:
+        pass  # st.secrets에서 키를 찾지 못하거나 파일이 없을 때 예외 발생 가능
+
+    try:
+        # 만약 st.secrets에서 키를 찾지 못했다면 현재 파일 경로의 secrets.toml을 직접 읽음
+        if not dart_key or not gemini_key:
+            import os
+            import re
+            local_secrets_path = os.path.join(os.path.dirname(__file__), ".streamlit", "secrets.toml")
+            if os.path.exists(local_secrets_path):
+                with open(local_secrets_path, "r", encoding="utf-8") as f:
+                    content = f.read()
+                    dart_match = re.search(r'DART_API_KEY\s*=\s*["\']([^"\']+)["\']', content)
+                    gemini_match = re.search(r'GEMINI_API_KEY\s*=\s*["\']([^"\']+)["\']', content)
+                    if dart_match and not dart_key:
+                        dart_key = dart_match.group(1)
+                    if gemini_match and not gemini_key:
+                        gemini_key = gemini_match.group(1)
+
         dart_reader = OpenDartReader(dart_key) if OpenDartReader and dart_key else None
         return dart_reader, gemini_key
     except Exception as e:
@@ -98,10 +121,22 @@ dart, GEMINI_API_KEY = init_api_keys()
 # ---------------------------------------------------------
 @st.cache_data(ttl=3600)
 def get_stock_list():
-    df_kospi = fdr.StockListing('KOSPI')
-    df_kosdaq = fdr.StockListing('KOSDAQ')
-    df = pd.concat([df_kospi, df_kosdaq])
-    return df
+    try:
+        # Streamlit Cloud 환경에서 KOSPI 개별 호출 시 종종 연결 에러가 발생하므로 KRX 전체를 호출하여 필터링
+        df = fdr.StockListing('KRX')
+        # KOSPI, KOSDAQ 종목만 필터링 (필요시 KOSDAQ GLOBAL 등 포함 가능)
+        if 'Market' in df.columns:
+            df = df[df['Market'].isin(['KOSPI', 'KOSDAQ', 'KOSDAQ GLOBAL'])]
+        return df
+    except Exception as e:
+        try:
+            # KRX 호출 실패 시 기존 방식(KOSPI, KOSDAQ 개별 호출)으로 재시도
+            df_kospi = fdr.StockListing('KOSPI')
+            df_kosdaq = fdr.StockListing('KOSDAQ')
+            return pd.concat([df_kospi, df_kosdaq])
+        except Exception as e2:
+            st.error("⚠️ 거래소 서버에서 종목 데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.")
+            return pd.DataFrame(columns=['Code', 'Name'])
 
 def find_ticker(name_or_ticker, df):
     if name_or_ticker.isdigit() and len(name_or_ticker) == 6:
@@ -313,7 +348,7 @@ st.title("📈 인텔리전트 주식 분석 리포트")
 st.write("원하시는 주식 종목명이나 코드를 입력하시면, 펀더멘털 및 AI 기반 심층 분석 리포트를 제공합니다.")
 
 if not GEMINI_API_KEY or dart is None:
-    st.warning("⚠️ API Key가 일부 누락되었습니다. (로컬 환경의 경우 .streamlit/secrets.toml, 웹 배포의 경우 앱 설정의 Secrets를 확인해 주세요.)")
+    st.info("💡 일부 기능(뉴스 AI 요약, DART 공시 확인)은 API Key를 설정하면 활성화됩니다.")
 
 df_stock = get_stock_list()
 
