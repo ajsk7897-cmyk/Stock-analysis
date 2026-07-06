@@ -3,5 +3,6 @@ pandas
 finance-datareader
 requests
 beautifulsoup4
-opendartreader
+OpenDartReader==0.2.2
 lxml
+requests-file
