@@ -109,9 +109,15 @@ def init_api_keys():
                     if gemini_match and not gemini_key:
                         gemini_key = gemini_match.group(1)
 
+        if OpenDartReader is None:
+            st.error("⚠️ 서버 문제: OpenDartReader 모듈을 불러오지 못했습니다. requirements.txt를 확인하세요.")
+        elif not dart_key:
+            st.error("⚠️ 설정 문제: DART_API_KEY 값을 찾을 수 없습니다. (Secrets 오타 확인)")
+
         dart_reader = OpenDartReader(dart_key) if OpenDartReader and dart_key else None
         return dart_reader, gemini_key
     except Exception as e:
+        st.error(f"⚠️ API 초기화 에러: {str(e)}")
         return None, None
 
 dart, GEMINI_API_KEY = init_api_keys()
