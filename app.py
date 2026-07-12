@@ -406,17 +406,21 @@ if daily_data:
         st.metric("📊 코스닥 평균 펀더멘털 점수", f"{daily_data.get('kosdaq_avg', 0)}점")
         
     st.markdown("#### 🔥 오늘의 AI 종합 매력도 Top 10")
-    t1, t2 = st.tabs(["KOSPI Top 10", "KOSDAQ Top 10"])
-    with t1:
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("##### 📈 KOSPI Top 10")
         if daily_data.get('kospi_top_10'):
             df_kospi = pd.DataFrame(daily_data['kospi_top_10'])
             df_kospi.index = df_kospi.index + 1
-            st.dataframe(df_kospi[['Name', 'Code', 'Score', 'Momentum', 'Sentiment']], use_container_width=True)
-    with t2:
+            df_kospi_disp = df_kospi[['Name', 'Code', 'Score']].rename(columns={'Name': '종목명', 'Code': '코드', 'Score': '점수'})
+            st.dataframe(df_kospi_disp, use_container_width=True)
+    with col2:
+        st.markdown("##### 📉 KOSDAQ Top 10")
         if daily_data.get('kosdaq_top_10'):
             df_kosdaq = pd.DataFrame(daily_data['kosdaq_top_10'])
             df_kosdaq.index = df_kosdaq.index + 1
-            st.dataframe(df_kosdaq[['Name', 'Code', 'Score', 'Momentum', 'Sentiment']], use_container_width=True)
+            df_kosdaq_disp = df_kosdaq[['Name', 'Code', 'Score']].rename(columns={'Name': '종목명', 'Code': '코드', 'Score': '점수'})
+            st.dataframe(df_kosdaq_disp, use_container_width=True)
     st.divider()
 
 with st.form("search_form"):
