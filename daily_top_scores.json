@@ -1,0 +1,169 @@
+{
+    "date": "2026-07-12 21:08",
+    "kospi_avg": 50.5,
+    "kosdaq_avg": 43.7,
+    "kospi_top_10": [
+        {
+            "Code": "090080",
+            "Name": "평화산업",
+            "Market": "KOSPI",
+            "Score": 79.5,
+            "Sentiment": "스코어: 95점 / 로봇·AI 사업 확장, DGIST 협력, 임원 매수로 성장 기대.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "031820",
+            "Name": "아이티센씨티에스",
+            "Market": "KOSPI",
+            "Score": 79.5,
+            "Sentiment": "스코어: 95점 / AI 전환 힘입어 역대 최대 실적, 흑자전환, 재무지표 최상.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "100840",
+            "Name": "SNT에너지",
+            "Market": "KOSPI",
+            "Score": 78.5,
+            "Sentiment": "스코어: 95점 / LNG 수주 잭팟, 실적 성장 기대감에 주가 급등.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "069730",
+            "Name": "DSR제강",
+            "Market": "KOSPI",
+            "Score": 73.0,
+            "Sentiment": "스코어: 90점 / 재무 우수, 최대주주 지분 확대 등 전반적으로 긍정적.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "002960",
+            "Name": "한국쉘석유",
+            "Market": "KOSPI",
+            "Score": 72.0,
+            "Sentiment": "스코어: 90점 / 호실적, 고배당, 외국인 매수, 골든크로스로 주가 강세.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "138040",
+            "Name": "메리츠금융지주",
+            "Market": "KOSPI",
+            "Score": 54.0,
+            "Sentiment": "💡 에러 429",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "009540",
+            "Name": "HD한국조선해양",
+            "Market": "KOSPI",
+            "Score": 54.0,
+            "Sentiment": "💡 에러 429",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "071970",
+            "Name": "HD현대마린엔진",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "💡 에러 429",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "033530",
+            "Name": "SJG세종",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "💡 에러 429",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "462870",
+            "Name": "시프트업",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "💡 에러 429",
+            "Momentum": "DART 연동 실패"
+        }
+    ],
+    "kosdaq_top_10": [
+        {
+            "Code": "090850",
+            "Name": "현대이지웰",
+            "Market": "KOSDAQ",
+            "Score": 79.0,
+            "Sentiment": "스코어: 98점 / 차세대 시스템 도입, 복지몰 개편으로 사용자 편의성 대폭 증대.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "143540",
+            "Name": "영우디에스피",
+            "Market": "KOSDAQ",
+            "Score": 78.5,
+            "Sentiment": "스코어: 95점 / 삼성D 등 대규모 계약 연달아 체결, OLED 투자 확대 수혜.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "052460",
+            "Name": "아이크래프트",
+            "Market": "KOSDAQ",
+            "Score": 78.5,
+            "Sentiment": "스코어: 95점 / 대규모 수주, 엔비디아 AI 파트너십으로 실적 UP.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "068930",
+            "Name": "디지털대성",
+            "Market": "KOSDAQ",
+            "Score": 77.5,
+            "Sentiment": "스코어: 95점 / 한우리 독서교실 확장 및 수상으로 성장 기반 강화",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "143240",
+            "Name": "사람인",
+            "Market": "KOSDAQ",
+            "Score": 77.0,
+            "Sentiment": "스코어: 90점 / 전략적 제휴, 미래 인재 확보로 사업 확장 및 성장.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "019540",
+            "Name": "일지테크",
+            "Market": "KOSDAQ",
+            "Score": 77.0,
+            "Sentiment": "스코어: 90점 / 초저평가 및 로봇/전동화 성장 기대감으로 매우 긍정적.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "0013V0",
+            "Name": "삼진식품",
+            "Market": "KOSDAQ",
+            "Score": 76.5,
+            "Sentiment": "스코어: 93점 / 직원 복지, 미래 비전, 주가 상승세로 긍정적.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "045340",
+            "Name": "토탈소프트",
+            "Market": "KOSDAQ",
+            "Score": 76.0,
+            "Sentiment": "스코어: 90점 / 혁신 기술 및 보안 인증 획득, 긍정적 성장 기대.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "171090",
+            "Name": "선익시스템",
+            "Market": "KOSDAQ",
+            "Score": 75.0,
+            "Sentiment": "스코어: 90점 / 인도 주정부와 OLED/페로브스카이트 협력 논의, 긍정적 사업 확장.",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "047080",
+            "Name": "한빛소프트",
+            "Market": "KOSDAQ",
+            "Score": 74.5,
+            "Sentiment": "스코어: 85점 / 대표이사 매수, 재무 개선, 신작 공개로 긍정적 전망.",
+            "Momentum": "DART 연동 실패"
+        }
+    ]
+}
