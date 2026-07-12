@@ -378,6 +378,40 @@ elif dart is None:
 
 df_stock = get_stock_list()
 
+def load_daily_scores():
+    import os
+    score_path = os.path.join(os.path.dirname(__file__), "daily_top_scores.json")
+    if os.path.exists(score_path):
+        try:
+            with open(score_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except:
+            return None
+    return None
+
+daily_data = load_daily_scores()
+if daily_data:
+    st.markdown(f"### 🏆 코스피/코스닥 시장 동향 ({daily_data.get('date', '')} 기준)")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("📊 코스피 평균 펀더멘털 점수", f"{daily_data.get('kospi_avg', 0)}점")
+    with col2:
+        st.metric("📊 코스닥 평균 펀더멘털 점수", f"{daily_data.get('kosdaq_avg', 0)}점")
+        
+    st.markdown("#### 🔥 오늘의 AI 종합 매력도 Top 10")
+    t1, t2 = st.tabs(["KOSPI Top 10", "KOSDAQ Top 10"])
+    with t1:
+        if daily_data.get('kospi_top_10'):
+            df_kospi = pd.DataFrame(daily_data['kospi_top_10'])
+            df_kospi.index = df_kospi.index + 1
+            st.dataframe(df_kospi[['Name', 'Code', 'Score', 'Momentum', 'Sentiment']], use_container_width=True)
+    with t2:
+        if daily_data.get('kosdaq_top_10'):
+            df_kosdaq = pd.DataFrame(daily_data['kosdaq_top_10'])
+            df_kosdaq.index = df_kosdaq.index + 1
+            st.dataframe(df_kosdaq[['Name', 'Code', 'Score', 'Momentum', 'Sentiment']], use_container_width=True)
+    st.divider()
+
 with st.form("search_form"):
     user_input = st.text_input("🔍 종목명 또는 종목코드 입력", placeholder="예: 삼성전자, 005930")
     submitted = st.form_submit_button("분석 시작!")
