@@ -127,7 +127,10 @@ def analyze_news_sentiment(name):
         prompt = f"다음은 '{name}' 종목의 최근 뉴스 헤드라인 5개입니다.\n{news_text}\n\n이 뉴스들을 종합하여 긍정/부정 스코어(0~100점, 100점이 가장 긍정적)를 매기고, 10단어 이내로 아주 짧게 핵심 요약평을 작성해줘. 반드시 '스코어: [점수]점 / [요약]' 형태의 한 줄로만 대답해줘."
         gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
         headers = {'Content-Type': 'application/json'}
-        data = {"contents": [{"parts":[{"text": prompt}]}]}
+        data = {
+            "contents": [{"parts":[{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.0}
+        }
         gemini_res = requests.post(gemini_url, headers=headers, json=data, timeout=10)
         if gemini_res.status_code == 200:
             return gemini_res.json()['candidates'][0]['content']['parts'][0]['text'].strip().replace('\n', ' ')

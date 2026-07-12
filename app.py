@@ -173,6 +173,7 @@ def find_ticker(name_or_ticker, df):
         return match.iloc[0]['Code'], match.iloc[0]['Name']
     return None, None
 
+@st.cache_data(ttl=3600)
 def get_naver_fundamental(ticker):
     url = f"https://finance.naver.com/item/main.naver?code={ticker}"
     try:
@@ -206,6 +207,7 @@ def get_naver_fundamental(ticker):
     except:
         return -1, -1, -999.0
 
+@st.cache_data(ttl=3600)
 def get_investor_trend(ticker):
     url = f"https://finance.naver.com/item/frgn.naver?code={ticker}"
     try:
@@ -235,6 +237,7 @@ def get_investor_trend(ticker):
     except:
         return "수급확인불가"
 
+@st.cache_data(ttl=3600)
 def check_dart_momentum(ticker):
     if not dart: return "DART 연동 실패"
     try:
@@ -258,6 +261,7 @@ def check_dart_momentum(ticker):
     except:
         return "공시 확인 불가"
 
+@st.cache_data(ttl=3600)
 def analyze_news_sentiment(name):
     if not GEMINI_API_KEY: return "AI 분석 꺼짐 (API Key 필요)"
     try:
@@ -274,7 +278,10 @@ def analyze_news_sentiment(name):
         
         gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
         headers = {'Content-Type': 'application/json'}
-        data = {"contents": [{"parts":[{"text": prompt}]}]}
+        data = {
+            "contents": [{"parts":[{"text": prompt}]}],
+            "generationConfig": {"temperature": 0.0}
+        }
         
         gemini_res = requests.post(gemini_url, headers=headers, json=data, timeout=10)
         if gemini_res.status_code == 200:
