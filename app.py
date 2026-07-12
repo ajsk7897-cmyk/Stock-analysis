@@ -85,6 +85,20 @@ st.markdown("""
         margin-bottom: 1rem;
         border: 1px solid #F1F5F9;
     }
+    
+    /* 표(테이블) 스타일링 */
+    [data-testid="stTable"] table {
+        width: 100%;
+    }
+    [data-testid="stTable"] th {
+        background-color: #e6f7e6 !important; /* 연두색 */
+        text-align: center !important;
+        color: #1e293b !important;
+        font-weight: 700 !important;
+    }
+    [data-testid="stTable"] td {
+        text-align: center !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -413,14 +427,14 @@ if daily_data:
             df_kospi = pd.DataFrame(daily_data['kospi_top_10'])
             df_kospi.index = df_kospi.index + 1
             df_kospi_disp = df_kospi[['Name', 'Code', 'Score']].rename(columns={'Name': '종목명', 'Code': '코드', 'Score': '점수'})
-            st.dataframe(df_kospi_disp, use_container_width=True)
+            st.table(df_kospi_disp)
     with col2:
         st.markdown("##### 📉 KOSDAQ Top 10")
         if daily_data.get('kosdaq_top_10'):
             df_kosdaq = pd.DataFrame(daily_data['kosdaq_top_10'])
             df_kosdaq.index = df_kosdaq.index + 1
             df_kosdaq_disp = df_kosdaq[['Name', 'Code', 'Score']].rename(columns={'Name': '종목명', 'Code': '코드', 'Score': '점수'})
-            st.dataframe(df_kosdaq_disp, use_container_width=True)
+            st.table(df_kosdaq_disp)
     st.divider()
 
 with st.form("search_form"):
