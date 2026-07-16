@@ -29,22 +29,22 @@ st.markdown("""
         font-family: 'Pretendard', sans-serif;
         background-color: #F8FAFC;
         color: #334155;
-        word-break: break-word; /* 모바일에서 텍스트 잘림 방지 */
+        word-break: break-word;
         overflow-wrap: break-word;
     }
     h1, h2, h3 {
         color: #1e293b;
         font-weight: 800 !important;
         letter-spacing: -0.5px;
-        font-size: clamp(1.3rem, 5vw, 2.2rem) !important; /* 화면 크기에 맞게 자동 조절 */
+        font-size: clamp(1.3rem, 5vw, 2.2rem) !important;
     }
     
-    .stButton>button {
+    /* 버튼 스타일 통일 */
+    .stButton > button, .stFormSubmitButton > button {
         background: #005EB8;
         color: white !important;
         border: none;
         border-radius: 8px;
-        padding: 0.6rem 2rem;
         font-weight: 700;
         font-size: 1.1rem;
         transition: all 0.3s ease;
@@ -52,25 +52,39 @@ st.markdown("""
         box-shadow: 0 4px 6px -1px rgba(0, 94, 184, 0.3);
     }
     
-    .stButton>button:hover {
+    .stButton > button:hover, .stFormSubmitButton > button:hover {
         transform: translateY(-2px);
         background: #004a94;
         box-shadow: 0 10px 15px -3px rgba(0, 94, 184, 0.4), 0 4px 6px -2px rgba(0, 94, 184, 0.2);
     }
 
+    /* 포트폴리오 요약 메트릭 박스(KPI) 동일 높이화 */
     [data-testid="metric-container"] {
         background-color: #ffffff;
-        border: 1px solid #F1F5F9;
+        border: 1px solid #e2e8f0;
         border-radius: 12px;
         border-top: 4px solid #005EB8;
         padding: 1.2rem;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+        min-height: 130px !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+    
+    [data-testid="metric-container"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border-top: 4px solid #004a94;
+    }
+
     [data-testid="stMetricValue"] > div {
-        color: #005EB8 !important;
+        color: #1e293b !important; 
         font-weight: 800 !important;
-        font-size: clamp(1rem, 3.5vw, 1.6rem) !important; /* 수급동향 등 긴 텍스트 잘림 방지 */
-        word-break: keep-all;
+        font-size: clamp(1rem, 3.5vw, 1.6rem) !important;
     }
     [data-testid="stMetricLabel"] > div {
         color: #64748b !important;
@@ -104,9 +118,11 @@ st.markdown("""
     /* UI/UX 레이아웃 교정 (픽셀 매칭 및 줄바꿈 방지)                           */
     /* -------------------------------------------------------------------------- */
     
-    /* 1. 절대 줄바꿈 금지 (No-Wrap 강제) - overflow: hidden 추가 */
+    /* 1. 절대 줄바꿈 금지 (No-Wrap 강제) */
     .stButton > button, 
+    .stFormSubmitButton > button,
     .stButton > button *,
+    .stFormSubmitButton > button *,
     [data-baseweb="tab"], 
     [data-baseweb="tab"] *, 
     td, th, 
@@ -120,12 +136,13 @@ st.markdown("""
         text-overflow: ellipsis !important;
     }
 
-    /* 2. 입력창 및 버튼 규격(높이) 완벽 통일 */
+    /* 2. 매매 입력창 및 버튼 규격(높이) 완벽 통일 */
     .stTextInput > div > div > input, 
     .stNumberInput > div > div > input, 
     .stSelectbox > div > div > div[data-baseweb="select"],
     .stDateInput > div > div > input,
-    .stButton > button {
+    .stButton > button,
+    .stFormSubmitButton > button {
         height: 42px !important;
         min-height: 42px !important;
         max-height: 42px !important;
@@ -135,17 +152,6 @@ st.markdown("""
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
-
-    /* 3. 대시보드 메트릭 박스(KPI) 동일 높이화 */
-    [data-testid="metric-container"] {
-        min-height: 130px !important;
-        height: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        overflow: hidden !important;
-    }
-    /* -------------------------------------------------------------------------- */
 </style>
 """, unsafe_allow_html=True)
 
@@ -485,8 +491,11 @@ if daily_data:
     st.divider()
 
 with st.form("search_form"):
-    user_input = st.text_input("🔍 종목명 또는 종목코드 입력", placeholder="예: 삼성전자, 005930")
-    submitted = st.form_submit_button("분석 시작!")
+    col_input, col_btn = st.columns([3, 1], vertical_alignment="bottom")
+    with col_input:
+        user_input = st.text_input("🔍 종목명 또는 종목코드 입력", placeholder="예: 삼성전자, 005930")
+    with col_btn:
+        submitted = st.form_submit_button("분석 시작!")
 
 if submitted and user_input:
     with st.spinner("해당 종목 데이터를 수집하고 AI 분석을 진행 중입니다. 잠시만 기다려주세요..."):
