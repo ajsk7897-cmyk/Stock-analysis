@@ -36,7 +36,11 @@ st.markdown("""
         color: #1e293b;
         font-weight: 800 !important;
         letter-spacing: -0.5px;
-        font-size: clamp(1.3rem, 5vw, 2.2rem) !important;
+        font-size: clamp(1rem, 3.5vw, 1.6rem) !important;
+        white-space: nowrap !important;
+        word-break: keep-all !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
     
     /* 버튼 스타일 통일 */
