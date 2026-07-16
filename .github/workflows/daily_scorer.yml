@@ -1,0 +1,43 @@
+name: Daily Stock Scorer
+
+on:
+  schedule:
+    # 매일 한국 시간 기준 오후 6시 (UTC 09:00)에 실행
+    - cron: '0 9 * * *'
+  workflow_dispatch: # 수동 실행 버튼 활성화
+
+jobs:
+  run-daily-scorer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Create secrets.toml from GitHub Secrets
+        run: |
+          mkdir -p .streamlit
+          echo "DART_API_KEY = \"${{ secrets.DART_API_KEY }}\"" > .streamlit/secrets.toml
+          echo "GEMINI_API_KEY = \"${{ secrets.GEMINI_API_KEY }}\"" >> .streamlit/secrets.toml
+
+      - name: Run daily scorer
+        run: |
+          python daily_scorer.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add daily_top_scores.json
+          git commit -m "Auto-update daily top scores [skip ci]" || echo "No changes to commit"
+          git push

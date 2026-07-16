@@ -99,6 +99,53 @@ st.markdown("""
     [data-testid="stTable"] td {
         text-align: center !important;
     }
+    
+    /* -------------------------------------------------------------------------- */
+    /* UI/UX 레이아웃 교정 (픽셀 매칭 및 줄바꿈 방지)                           */
+    /* -------------------------------------------------------------------------- */
+    
+    /* 1. 절대 줄바꿈 금지 (No-Wrap 강제) - overflow: hidden 추가 */
+    .stButton > button, 
+    .stButton > button *,
+    [data-baseweb="tab"], 
+    [data-baseweb="tab"] *, 
+    td, th, 
+    [data-testid="stMetricLabel"],
+    [data-testid="stMetricLabel"] *, 
+    [data-testid="stMetricValue"],
+    [data-testid="stMetricValue"] * {
+        white-space: nowrap !important;
+        word-break: keep-all !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* 2. 입력창 및 버튼 규격(높이) 완벽 통일 */
+    .stTextInput > div > div > input, 
+    .stNumberInput > div > div > input, 
+    .stSelectbox > div > div > div[data-baseweb="select"],
+    .stDateInput > div > div > input,
+    .stButton > button {
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+        line-height: 42px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* 3. 대시보드 메트릭 박스(KPI) 동일 높이화 */
+    [data-testid="metric-container"] {
+        min-height: 130px !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+    }
+    /* -------------------------------------------------------------------------- */
 </style>
 """, unsafe_allow_html=True)
 
@@ -413,14 +460,14 @@ def load_daily_scores():
 daily_data = load_daily_scores()
 if daily_data:
     st.markdown(f"### 🏆 코스피/코스닥 시장 동향 ({daily_data.get('date', '')} 기준)")
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, vertical_alignment="top")
     with col1:
         st.metric("📊 코스피 평균 펀더멘털 점수", f"{daily_data.get('kospi_avg', 0)}점")
     with col2:
         st.metric("📊 코스닥 평균 펀더멘털 점수", f"{daily_data.get('kosdaq_avg', 0)}점")
         
     st.markdown("#### 🔥 오늘의 AI 종합 매력도 Top 10")
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, vertical_alignment="top")
     with col1:
         st.markdown("##### 📈 KOSPI Top 10")
         if daily_data.get('kospi_top_10'):
@@ -459,7 +506,7 @@ if submitted and user_input:
             
             st.markdown(f"<div class='card'><h3 style='text-align:center; word-break: keep-all;'>✨ AI 종합 매력도: {score}점 / 100점 ✨</h3></div>", unsafe_allow_html=True)
             
-            col1, col2, col3 = st.columns(3)
+            col1, col2, col3 = st.columns(3, vertical_alignment="top")
             col1.metric("📊 PER (주가수익비율)", f"{per:.1f}배" if per > 0 else "N/A")
             col2.metric("📈 ROE (자기자본이익률)", f"{roe:.1f}%" if roe != -999.0 else "N/A")
             col3.metric("🤝 수급 동향 (5일)", trend)
