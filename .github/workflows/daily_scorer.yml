@@ -9,6 +9,8 @@ on:
 jobs:
   run-daily-scorer:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
