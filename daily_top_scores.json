@@ -1,5 +1,5 @@
 {
-    "date": "2026-07-18 10:30",
+    "date": "2026-07-19 10:48",
     "kospi_avg": 48.5,
     "kosdaq_avg": 41.9,
     "kospi_top_10": [
@@ -68,16 +68,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "058860",
-            "Name": "KTis",
+            "Code": "069730",
+            "Name": "DSR제강",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "069730",
-            "Name": "DSR제강",
+            "Code": "058860",
+            "Name": "KTis",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -86,8 +86,8 @@
     ],
     "kosdaq_top_10": [
         {
-            "Code": "064820",
-            "Name": "케이프",
+            "Code": "010280",
+            "Name": "아이티센엔텍",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -102,16 +102,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "010280",
-            "Name": "아이티센엔텍",
+            "Code": "100030",
+            "Name": "인지소프트",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "100030",
-            "Name": "인지소프트",
+            "Code": "064820",
+            "Name": "케이프",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -142,14 +142,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "098070",
-            "Name": "한텍",
-            "Market": "KOSDAQ",
-            "Score": 55.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "353810",
             "Name": "이지바이오",
             "Market": "KOSDAQ",
@@ -158,8 +150,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "032190",
-            "Name": "다우데이타",
+            "Code": "098070",
+            "Name": "한텍",
+            "Market": "KOSDAQ",
+            "Score": 55.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "066620",
+            "Name": "국보디자인",
             "Market": "KOSDAQ",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
