@@ -1,16 +1,8 @@
 {
-    "date": "2026-07-24 11:15",
+    "date": "2026-07-25 10:46",
     "kospi_avg": 46.9,
     "kosdaq_avg": 40.0,
     "kospi_top_10": [
-        {
-            "Code": "013700",
-            "Name": "까뮤이앤씨",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
         {
             "Code": "019180",
             "Name": "티에이치엔",
@@ -28,8 +20,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "010770",
-            "Name": "평화홀딩스",
+            "Code": "002380",
+            "Name": "KCC",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "013700",
+            "Name": "까뮤이앤씨",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -44,16 +44,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "000910",
-            "Name": "유니온",
+            "Code": "010770",
+            "Name": "평화홀딩스",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "002380",
-            "Name": "KCC",
+            "Code": "000910",
+            "Name": "유니온",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -76,8 +76,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "007610",
-            "Name": "선도전기",
+            "Code": "030720",
+            "Name": "동원수산",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -86,16 +86,32 @@
     ],
     "kosdaq_top_10": [
         {
-            "Code": "092600",
-            "Name": "앤씨앤",
+            "Code": "130740",
+            "Name": "티피씨글로벌",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "019540",
-            "Name": "일지테크",
+            "Code": "184230",
+            "Name": "SGA솔루션즈",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "010280",
+            "Name": "아이티센엔텍",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "263600",
+            "Name": "덕우전자",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -104,6 +120,14 @@
         {
             "Code": "088130",
             "Name": "동아엘텍",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "019540",
+            "Name": "일지테크",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -126,30 +150,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "130740",
-            "Name": "티피씨글로벌",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "263600",
-            "Name": "덕우전자",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "010280",
-            "Name": "아이티센엔텍",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "043260",
             "Name": "성호전자",
             "Market": "KOSDAQ",
@@ -158,8 +158,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "184230",
-            "Name": "SGA솔루션즈",
+            "Code": "092600",
+            "Name": "앤씨앤",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
