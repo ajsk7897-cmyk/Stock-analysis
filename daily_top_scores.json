@@ -1,27 +1,19 @@
 {
-    "date": "2026-07-25 10:46",
+    "date": "2026-07-26 10:53",
     "kospi_avg": 46.9,
     "kosdaq_avg": 40.0,
     "kospi_top_10": [
         {
-            "Code": "019180",
-            "Name": "티에이치엔",
+            "Code": "031820",
+            "Name": "아이티센씨티에스",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "001450",
-            "Name": "현대해상",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "002380",
-            "Name": "KCC",
+            "Code": "000910",
+            "Name": "유니온",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -36,8 +28,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "031820",
-            "Name": "아이티센씨티에스",
+            "Code": "019180",
+            "Name": "티에이치엔",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "002380",
+            "Name": "KCC",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -52,8 +52,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "000910",
-            "Name": "유니온",
+            "Code": "001450",
+            "Name": "현대해상",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -76,8 +76,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "030720",
-            "Name": "동원수산",
+            "Code": "069730",
+            "Name": "DSR제강",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -86,16 +86,8 @@
     ],
     "kosdaq_top_10": [
         {
-            "Code": "130740",
-            "Name": "티피씨글로벌",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "184230",
-            "Name": "SGA솔루션즈",
+            "Code": "092600",
+            "Name": "앤씨앤",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -110,8 +102,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "263600",
-            "Name": "덕우전자",
+            "Code": "130740",
+            "Name": "티피씨글로벌",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "019540",
+            "Name": "일지테크",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -126,8 +126,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "019540",
-            "Name": "일지테크",
+            "Code": "263600",
+            "Name": "덕우전자",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -158,8 +158,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "092600",
-            "Name": "앤씨앤",
+            "Code": "184230",
+            "Name": "SGA솔루션즈",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
