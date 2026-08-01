@@ -1,11 +1,27 @@
 {
-    "date": "2026-07-31 11:40",
+    "date": "2026-08-01 10:53",
     "kospi_avg": 51.1,
     "kosdaq_avg": 43.3,
     "kospi_top_10": [
         {
-            "Code": "010770",
-            "Name": "평화홀딩스",
+            "Code": "003080",
+            "Name": "SB성보",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "000910",
+            "Name": "유니온",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "136490",
+            "Name": "선진",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -28,24 +44,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "003080",
-            "Name": "SB성보",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "136490",
-            "Name": "선진",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "000910",
-            "Name": "유니온",
+            "Code": "010770",
+            "Name": "평화홀딩스",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -86,22 +86,6 @@
     ],
     "kosdaq_top_10": [
         {
-            "Code": "130740",
-            "Name": "티피씨글로벌",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "100030",
-            "Name": "인지소프트",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "330730",
             "Name": "스톤브릿지벤처스",
             "Market": "KOSDAQ",
@@ -118,14 +102,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "043260",
-            "Name": "성호전자",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "006620",
             "Name": "동구바이오제약",
             "Market": "KOSDAQ",
@@ -134,10 +110,26 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "418470",
-            "Name": "KT밀리의서재",
+            "Code": "130740",
+            "Name": "티피씨글로벌",
             "Market": "KOSDAQ",
-            "Score": 56.0,
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "100030",
+            "Name": "인지소프트",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "043260",
+            "Name": "성호전자",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
@@ -145,6 +137,14 @@
             "Code": "067160",
             "Name": "SOOP",
             "Market": "KOSDAQ GLOBAL",
+            "Score": 56.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "032620",
+            "Name": "GC메디아이",
+            "Market": "KOSDAQ",
             "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
@@ -158,8 +158,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "032620",
-            "Name": "GC메디아이",
+            "Code": "418470",
+            "Name": "KT밀리의서재",
             "Market": "KOSDAQ",
             "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
