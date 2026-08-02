@@ -1,16 +1,8 @@
 {
-    "date": "2026-08-01 10:53",
+    "date": "2026-08-02 10:53",
     "kospi_avg": 51.1,
     "kosdaq_avg": 43.3,
     "kospi_top_10": [
-        {
-            "Code": "003080",
-            "Name": "SB성보",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
         {
             "Code": "000910",
             "Name": "유니온",
@@ -20,8 +12,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "136490",
-            "Name": "선진",
+            "Code": "003080",
+            "Name": "SB성보",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "010770",
+            "Name": "평화홀딩스",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -44,8 +44,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "010770",
-            "Name": "평화홀딩스",
+            "Code": "136490",
+            "Name": "선진",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -68,16 +68,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "007610",
-            "Name": "선도전기",
+            "Code": "462870",
+            "Name": "시프트업",
             "Market": "KOSPI",
             "Score": 54.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "462870",
-            "Name": "시프트업",
+            "Code": "007610",
+            "Name": "선도전기",
             "Market": "KOSPI",
             "Score": 54.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -85,6 +85,14 @@
         }
     ],
     "kosdaq_top_10": [
+        {
+            "Code": "031330",
+            "Name": "에스에이엠티",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
         {
             "Code": "330730",
             "Name": "스톤브릿지벤처스",
@@ -94,8 +102,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "031330",
-            "Name": "에스에이엠티",
+            "Code": "100030",
+            "Name": "인지소프트",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -118,18 +126,18 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "100030",
-            "Name": "인지소프트",
+            "Code": "043260",
+            "Name": "성호전자",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "043260",
-            "Name": "성호전자",
+            "Code": "071200",
+            "Name": "인피니트헬스케어",
             "Market": "KOSDAQ",
-            "Score": 57.0,
+            "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
@@ -144,14 +152,6 @@
         {
             "Code": "032620",
             "Name": "GC메디아이",
-            "Market": "KOSDAQ",
-            "Score": 56.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "071200",
-            "Name": "인피니트헬스케어",
             "Market": "KOSDAQ",
             "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
