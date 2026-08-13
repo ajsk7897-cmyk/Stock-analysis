@@ -1,24 +1,8 @@
 {
-    "date": "2026-08-12 10:19",
-    "kospi_avg": 48.3,
-    "kosdaq_avg": 40.3,
+    "date": "2026-08-13 10:21",
+    "kospi_avg": 43.7,
+    "kosdaq_avg": 38.4,
     "kospi_top_10": [
-        {
-            "Code": "002380",
-            "Name": "KCC",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "013520",
-            "Name": "화승코퍼레이션",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
         {
             "Code": "004920",
             "Name": "씨아이테크",
@@ -36,22 +20,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "090080",
-            "Name": "평화산업",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "018500",
-            "Name": "동원모빌리티",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "096760",
             "Name": "JW홀딩스",
             "Market": "KOSPI",
@@ -60,10 +28,10 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "462870",
-            "Name": "시프트업",
+            "Code": "383220",
+            "Name": "F&F",
             "Market": "KOSPI",
-            "Score": 54.0,
+            "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
@@ -76,15 +44,55 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "069730",
-            "Name": "DSR제강",
+            "Code": "138040",
+            "Name": "메리츠금융지주",
+            "Market": "KOSPI",
+            "Score": 54.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "007980",
+            "Name": "TP",
             "Market": "KOSPI",
             "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "012280",
+            "Name": "영화금속",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "044820",
+            "Name": "코스맥스비티아이",
+            "Market": "KOSPI",
+            "Score": 51.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "079900",
+            "Name": "전진건설로봇",
+            "Market": "KOSPI",
+            "Score": 51.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         }
     ],
     "kosdaq_top_10": [
+        {
+            "Code": "137080",
+            "Name": "나래나노텍",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
         {
             "Code": "019540",
             "Name": "일지테크",
@@ -94,16 +102,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "100030",
-            "Name": "인지소프트",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "263600",
-            "Name": "덕우전자",
+            "Code": "006620",
+            "Name": "동구바이오제약",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -118,30 +118,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "224060",
-            "Name": "더코디",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "137080",
-            "Name": "나래나노텍",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "088130",
-            "Name": "동아엘텍",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "418470",
             "Name": "KT밀리의서재",
             "Market": "KOSDAQ",
@@ -150,10 +126,18 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "032620",
-            "Name": "GC메디아이",
+            "Code": "045340",
+            "Name": "토탈소프트",
             "Market": "KOSDAQ",
             "Score": 56.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "0013V0",
+            "Name": "삼진식품",
+            "Market": "KOSDAQ",
+            "Score": 55.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
@@ -162,6 +146,22 @@
             "Name": "인피니트헬스케어",
             "Market": "KOSDAQ",
             "Score": 55.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "487580",
+            "Name": "폴레드",
+            "Market": "KOSDAQ",
+            "Score": 54.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "053270",
+            "Name": "구영테크",
+            "Market": "KOSDAQ",
+            "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         }
