@@ -1,11 +1,11 @@
 {
-    "date": "2026-08-13 10:21",
-    "kospi_avg": 43.7,
-    "kosdaq_avg": 38.4,
+    "date": "2026-08-14 10:16",
+    "kospi_avg": 46.3,
+    "kosdaq_avg": 38.9,
     "kospi_top_10": [
         {
-            "Code": "004920",
-            "Name": "씨아이테크",
+            "Code": "090080",
+            "Name": "평화산업",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -20,32 +20,40 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "096760",
-            "Name": "JW홀딩스",
+            "Code": "002380",
+            "Name": "KCC",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "004920",
+            "Name": "씨아이테크",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "013700",
+            "Name": "까뮤이앤씨",
             "Market": "KOSPI",
             "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "383220",
-            "Name": "F&F",
-            "Market": "KOSPI",
-            "Score": 56.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "003350",
-            "Name": "한국화장품제조",
+            "Code": "402340",
+            "Name": "SK스퀘어",
             "Market": "KOSPI",
             "Score": 54.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "138040",
-            "Name": "메리츠금융지주",
+            "Code": "003350",
+            "Name": "한국화장품제조",
             "Market": "KOSPI",
             "Score": 54.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -68,26 +76,18 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "044820",
-            "Name": "코스맥스비티아이",
+            "Code": "023590",
+            "Name": "다우기술",
             "Market": "KOSPI",
-            "Score": 51.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "079900",
-            "Name": "전진건설로봇",
-            "Market": "KOSPI",
-            "Score": 51.0,
+            "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         }
     ],
     "kosdaq_top_10": [
         {
-            "Code": "137080",
-            "Name": "나래나노텍",
+            "Code": "047080",
+            "Name": "한빛소프트",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -102,8 +102,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "006620",
-            "Name": "동구바이오제약",
+            "Code": "184230",
+            "Name": "SGA솔루션즈",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -118,10 +118,18 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "418470",
-            "Name": "KT밀리의서재",
+            "Code": "137080",
+            "Name": "나래나노텍",
             "Market": "KOSDAQ",
-            "Score": 56.0,
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "064820",
+            "Name": "케이프",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
@@ -150,16 +158,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "487580",
-            "Name": "폴레드",
-            "Market": "KOSDAQ",
-            "Score": 54.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "053270",
-            "Name": "구영테크",
+            "Code": "049720",
+            "Name": "고려신용정보",
             "Market": "KOSDAQ",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
