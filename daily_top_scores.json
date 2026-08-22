@@ -1,6 +1,6 @@
 {
-    "date": "2026-08-21 09:50",
-    "kospi_avg": 44.7,
+    "date": "2026-08-22 09:37",
+    "kospi_avg": 45.0,
     "kosdaq_avg": 36.0,
     "kospi_top_10": [
         {
@@ -20,30 +20,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "030720",
-            "Name": "동원수산",
-            "Market": "KOSPI",
-            "Score": 53.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "111380",
-            "Name": "동인기연",
-            "Market": "KOSPI",
-            "Score": 53.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "069730",
-            "Name": "DSR제강",
-            "Market": "KOSPI",
-            "Score": 53.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "227840",
             "Name": "현대코퍼레이션홀딩스",
             "Market": "KOSPI",
@@ -52,8 +28,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "005960",
-            "Name": "동부건설",
+            "Code": "030720",
+            "Name": "동원수산",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "097230",
+            "Name": "HJ중공업",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -68,16 +52,32 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "003720",
-            "Name": "삼영",
+            "Code": "069730",
+            "Name": "DSR제강",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "097230",
-            "Name": "HJ중공업",
+            "Code": "005960",
+            "Name": "동부건설",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "111380",
+            "Name": "동인기연",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "003720",
+            "Name": "삼영",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -86,16 +86,16 @@
     ],
     "kosdaq_top_10": [
         {
-            "Code": "130740",
-            "Name": "티피씨글로벌",
+            "Code": "177350",
+            "Name": "베셀",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "177350",
-            "Name": "베셀",
+            "Code": "130740",
+            "Name": "티피씨글로벌",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -110,8 +110,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "046940",
-            "Name": "우원개발",
+            "Code": "137080",
+            "Name": "나래나노텍",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -126,8 +126,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "137080",
-            "Name": "나래나노텍",
+            "Code": "046940",
+            "Name": "우원개발",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -142,16 +142,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "045340",
-            "Name": "토탈소프트",
+            "Code": "950140",
+            "Name": "잉글우드랩",
             "Market": "KOSDAQ",
             "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "950140",
-            "Name": "잉글우드랩",
+            "Code": "045340",
+            "Name": "토탈소프트",
             "Market": "KOSDAQ",
             "Score": 56.0,
             "Sentiment": "AI 분석 꺼짐",
