@@ -1,11 +1,11 @@
 {
-    "date": "2026-08-29 14:24",
+    "date": "2026-08-30 14:30",
     "kospi_avg": 50.1,
     "kosdaq_avg": 40.9,
     "kospi_top_10": [
         {
-            "Code": "378850",
-            "Name": "화승알앤에이",
+            "Code": "100250",
+            "Name": "진양홀딩스",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -20,16 +20,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "023590",
-            "Name": "다우기술",
-            "Market": "KOSPI",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "000910",
-            "Name": "유니온",
+            "Code": "378850",
+            "Name": "화승알앤에이",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -44,8 +36,16 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "100250",
-            "Name": "진양홀딩스",
+            "Code": "000910",
+            "Name": "유니온",
+            "Market": "KOSPI",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "023590",
+            "Name": "다우기술",
             "Market": "KOSPI",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -68,8 +68,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "003480",
-            "Name": "한진중공업홀딩스",
+            "Code": "100220",
+            "Name": "비상교육",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -102,24 +102,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "177350",
-            "Name": "베셀",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "282620",
             "Name": "기도산업",
-            "Market": "KOSDAQ",
-            "Score": 57.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "330730",
-            "Name": "스톤브릿지벤처스",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -134,8 +118,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "064820",
-            "Name": "케이프",
+            "Code": "330730",
+            "Name": "스톤브릿지벤처스",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
@@ -152,6 +136,22 @@
         {
             "Code": "148930",
             "Name": "에이치와이티씨",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "064820",
+            "Name": "케이프",
+            "Market": "KOSDAQ",
+            "Score": 57.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "177350",
+            "Name": "베셀",
             "Market": "KOSDAQ",
             "Score": 57.0,
             "Sentiment": "AI 분석 꺼짐",
