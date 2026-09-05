@@ -1,5 +1,5 @@
 {
-    "date": "2026-09-04 13:27",
+    "date": "2026-09-05 12:37",
     "kospi_avg": 46.4,
     "kosdaq_avg": 40.3,
     "kospi_top_10": [
@@ -28,22 +28,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "227840",
-            "Name": "현대코퍼레이션홀딩스",
-            "Market": "KOSPI",
-            "Score": 53.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "100220",
-            "Name": "비상교육",
-            "Market": "KOSPI",
-            "Score": 53.0,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "00680K",
             "Name": "미래에셋증권2우B",
             "Market": "KOSPI",
@@ -54,6 +38,22 @@
         {
             "Code": "033270",
             "Name": "유나이티드제약",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "227840",
+            "Name": "현대코퍼레이션홀딩스",
+            "Market": "KOSPI",
+            "Score": 53.0,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "100220",
+            "Name": "비상교육",
             "Market": "KOSPI",
             "Score": 53.0,
             "Sentiment": "AI 분석 꺼짐",
