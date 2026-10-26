@@ -1,27 +1,11 @@
 {
-    "date": "2026-10-25 13:41",
+    "date": "2026-10-26 16:03",
     "kospi_avg": 10.0,
     "kosdaq_avg": 10.0,
     "kospi_top_10": [
         {
-            "Code": "034020",
-            "Name": "두산에너빌리티",
-            "Market": "KOSPI",
-            "Score": 7.5,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "005380",
-            "Name": "현대차",
-            "Market": "KOSPI",
-            "Score": 7.5,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
-            "Code": "035420",
-            "Name": "NAVER",
+            "Code": "005490",
+            "Name": "POSCO홀딩스",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
@@ -36,8 +20,8 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "011200",
-            "Name": "HMM",
+            "Code": "316140",
+            "Name": "우리금융지주",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
@@ -52,14 +36,6 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "096770",
-            "Name": "SK이노베이션",
-            "Market": "KOSPI",
-            "Score": 7.5,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        },
-        {
             "Code": "329180",
             "Name": "HD현대중공업",
             "Market": "KOSPI",
@@ -68,8 +44,32 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "068270",
-            "Name": "셀트리온",
+            "Code": "010120",
+            "Name": "LS ELECTRIC",
+            "Market": "KOSPI",
+            "Score": 7.5,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "035420",
+            "Name": "NAVER",
+            "Market": "KOSPI",
+            "Score": 7.5,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "000810",
+            "Name": "삼성화재",
+            "Market": "KOSPI",
+            "Score": 7.5,
+            "Sentiment": "AI 분석 꺼짐",
+            "Momentum": "DART 연동 실패"
+        },
+        {
+            "Code": "028260",
+            "Name": "삼성물산",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
