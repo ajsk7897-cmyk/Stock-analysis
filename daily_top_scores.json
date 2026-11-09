@@ -1,43 +1,43 @@
 {
-    "date": "2026-11-08 15:55",
+    "date": "2026-11-09 19:42",
     "kospi_avg": 10.0,
     "kosdaq_avg": 10.0,
     "kospi_top_10": [
         {
-            "Code": "009150",
-            "Name": "삼성전기",
+            "Code": "000660",
+            "Name": "SK하이닉스",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "033780",
-            "Name": "KT&G",
+            "Code": "010130",
+            "Name": "고려아연",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "086790",
-            "Name": "하나금융지주",
+            "Code": "005380",
+            "Name": "현대차",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "402340",
-            "Name": "SK스퀘어",
+            "Code": "000810",
+            "Name": "삼성화재",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "012450",
-            "Name": "한화에어로스페이스",
+            "Code": "105560",
+            "Name": "KB금융",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
@@ -52,46 +52,37 @@
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "028260",
-            "Name": "삼성물산",
+            "Code": "000270",
+            "Name": "기아",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "207940",
-            "Name": "삼성바이오로직스",
+            "Code": "034730",
+            "Name": "SK",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "329180",
-            "Name": "HD현대중공업",
+            "Code": "012330",
+            "Name": "현대모비스",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         },
         {
-            "Code": "005930",
-            "Name": "삼성전자",
+            "Code": "015760",
+            "Name": "한국전력",
             "Market": "KOSPI",
             "Score": 7.5,
             "Sentiment": "AI 분석 꺼짐",
             "Momentum": "DART 연동 실패"
         }
     ],
-    "kosdaq_top_10": [
-        {
-            "Code": "196170",
-            "Name": "알테오젠",
-            "Market": "KOSDAQ GLOBAL",
-            "Score": 7.5,
-            "Sentiment": "AI 분석 꺼짐",
-            "Momentum": "DART 연동 실패"
-        }
-    ]
+    "kosdaq_top_10": []
 }
